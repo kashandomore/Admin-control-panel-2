@@ -21,6 +21,7 @@ const ShowButton = () => (
 
 const dataList = [
   {
+    id: 1,
     icon: <ImUser />,
     name: "Alex mani",
     date: "02/08/2012",
@@ -31,6 +32,7 @@ const dataList = [
     button1: <ShowButton />,
   },
   {
+    id: 2,
     icon: <ImUser />,
     name: "Kiley Pouros",
     date: "02/08/2012",
@@ -41,6 +43,7 @@ const dataList = [
     button1: <ShowButton />,
   },
   {
+    id: 3,
     icon: <ImUser />,
     name: "Justina Hegmann",
     date: "02/08/2012",
@@ -50,6 +53,7 @@ const dataList = [
     button1: <ShowButton />,
   },
   {
+    id: 4,
     icon: <ImUser />,
     name: "Ms. Brionna Smitham MD",
     date: "02/08/2012",
@@ -60,6 +64,7 @@ const dataList = [
     button1: <ShowButton />,
   },
   {
+    id: 5,
     icon: <ImUser />,
     name: "Edmond Schulist",
     date: "02/08/2012",
@@ -70,6 +75,7 @@ const dataList = [
     button1: <ShowButton />,
   },
   {
+    id: 6,
     icon: <ImUser />,
     name: "Danny Greenholt",
     date: "02/08/2012",
@@ -82,8 +88,8 @@ const dataList = [
 ];
 const Comments = () => (
   <div className="p-8 grid gap-8 lg:grid-cols-2 sm:grid-cols-1">
-    {dataList.map(({ icon, name, date, title, about, Button, button1 }) => (
-      <div className="bg-white shadow-xl p-8">
+    {dataList.map(({ id, icon, name, date, title, about, Button, button1 }) => (
+      <div key={id} className="bg-white shadow-xl p-8">
         <div className="flex items-center">
           <h3 className="bg-gray-400 text-white rounded-full p-2">{icon}</h3>
           <div>
