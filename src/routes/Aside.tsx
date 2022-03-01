@@ -11,8 +11,8 @@ type Props = {
 const Aside = ({ isVisible }: Props) => {
   return (
     <div
-      className={`bg-white min-h-screen w-72 p-6 absolute lg:relative ${
-        isVisible ? "block" : "hidden"
+      className={`bg-white min-h-screen duration-500 w-72 p-6 absolute lg:relative ${
+        isVisible ? "-ml-72" : "-ml-0"
       }`}
     >
       <ul>
