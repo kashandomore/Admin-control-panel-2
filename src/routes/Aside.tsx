@@ -1,7 +1,7 @@
 import React from "react";
 import { BsFillFilePostFill } from "react-icons/bs";
-import { MdModeComment } from "react-icons/md";
-import { FaList } from "react-icons/fa";
+import { FaCommentAlt } from "react-icons/fa";
+import { ImPriceTags } from "react-icons/im";
 import { Link } from "react-router-dom";
 455;
 type Props = {
@@ -24,13 +24,13 @@ const Aside = ({ isVisible }: Props) => {
         </div>
         <div className=" text-xl hover:bg-slate-200 active:bg-slate-400 p-2 rounded-lg">
           <li className="flex gap-2 items-center">
-            <MdModeComment />
+            <FaCommentAlt />
             <Link to="/Comments">Comments</Link>
           </li>
         </div>
         <div className="text-xl hover:bg-slate-200 active:bg-slate-400 p-2 rounded-lg">
           <li className="flex gap-2 items-center">
-            <FaList />
+            <ImPriceTags />
             <Link to="/Tags">Tags</Link>
           </li>
         </div>

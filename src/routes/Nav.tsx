@@ -23,7 +23,10 @@ const Nav = ({ menuClick }: Props) => {
   }, [location.pathname]);
   return (
     <div className="bg-white p-3 gap-2 flex items-center border-b-2 ">
-      <button onClick={menuClick}>
+      <button
+        className="active:bg-slate-800 bg-slate-500 text-white  rounded-full p-1"
+        onClick={menuClick}
+      >
         <BsList className="text-2xl" />
       </button>
 
